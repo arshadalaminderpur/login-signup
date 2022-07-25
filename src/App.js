@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Head from './components/Head';
+import Person from './components/Person';
+import Greet from './components/Greet';
+import Welcome from './components/Welcome';
 function App() {
   return (
     <div className="App">
@@ -18,6 +21,13 @@ function App() {
           Learn React
         </a>
       </header>
+      {/* <Head technology="react js"></Head>
+      <Head></Head>
+      <Person id="120" name="arshad" ></Person>
+      <Greet></Greet> */}
+      <Welcome first="arshad" last="alam"></Welcome>
+      <Greet name="arshad" last="alam"><p>hiui</p></Greet>
+      <Greet name="talat" last="mahmood"></Greet>
     </div>
   );
 }
