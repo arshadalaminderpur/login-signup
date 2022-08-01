@@ -7,6 +7,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import { BrowserRouter , Routes ,
   Route, Redirect,Link} from "react-router-dom";
+import Addpost from './components/Addpost';
 
 function App() {
   return (
@@ -14,12 +15,13 @@ function App() {
     {/* <Navbar title="Navbar title" />
     <Form heading="Enter text to convert"/>  */}
     {/* <About/> */}
-    <BrowserRouter>
+    {/* <BrowserRouter>
     <Routes>
       <Route path="/Register" element={<Register/>}></Route>
       <Route path="/" element={<Login/>}></Route>
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter> */}
+  <Addpost/>
     </>
   );
 }
